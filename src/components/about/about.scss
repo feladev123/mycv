@@ -1,0 +1,280 @@
+.container{
+    position: relative;
+    margin: 50px 100px;
+    overflow-x: hidden; 
+        .Sms{
+            display: flex;
+            
+            .picContainer{
+                flex: 1;
+                
+                .imgCont{
+                    width: calc(100% - 40px);
+                    height: 400px;
+                    object-fit: cover;
+                    animation-name: ImgCon;
+                    animation-duration: 2s;
+                    
+                    @keyframes ImgCon {
+                        0%   {width: calc(100% - 40px); margin-left: -700px;}
+                        20%  {width: calc(100% - 40px); margin-left:-600px}
+                    }
+                }
+            }
+            .about{
+                flex: 1;
+                
+                .aboutMe{
+                    animation-name: aboutWE;
+                    animation-duration: 2s;
+                    
+                    @keyframes aboutWE {
+                        0% {margin-left: 400px; opacity: 0;}   
+                    }
+                    .head{
+                        display: flex;
+                        align-items: center;
+                        margin-top: 30px;
+                        h2{
+                          color: rgb(123, 128, 154);
+                        }
+                        span{
+                            position: relative;
+                            margin-top:5px ;
+                            display: inline-block;
+                            margin-left: 5px;
+                            width: 80px;
+                            height: 4px;
+                            background: #6f42c1;
+                            filter: blur(4px);                          
+                        }
+                    }
+                    .Small{
+                        display:grid;
+                        margin-top: 20px;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        gap: 10px;
+                        height: 5px;
+
+                        .SmallBx{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-between;
+                            height: 200px;
+                            justify-content: center;
+                            background-color: #1a0e32;
+                            color: white;
+                            letter-spacing: 1px;
+                            
+                            .icon{
+                                font-size: 25px;
+                                margin-bottom: 20px;
+                            }
+                            h5{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+}
+@media(min-width:100px) and (max-width:1029.33px){
+    .container{
+        margin: 50px 50px;
+    }
+    
+}
+@media(min-width:892px) and (max-width:941.33px){
+    .container{
+            .Sms{
+                .about{
+                    .aboutMe{
+                        .Small{
+                            .SmallBx{
+                                
+                                
+                                h5{
+                                    font-size:17px;
+                                }
+                                span{
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+}
+@media(min-width:100px) and (max-width:890.33px){
+    .container{
+        overflow: hidden;
+        
+            .Sms{
+                .picContainer{
+                    .imgCont{
+                        object-fit: contain;
+                        height: 550px;
+                    }
+                }
+                .about{
+                    .aboutMe{
+                        .Small{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            overflow: hidden;
+                            grid-auto-rows: 13rem;
+                            height: 500px;
+                        }
+                    }
+                }
+            }
+        }
+}
+@media(min-width:100px) and (max-width:789.33px){
+    .container{
+
+            .Sms{
+                .picContainer{
+                    .imgCont{
+                        margin-top: -80px;
+                        object-fit: contain;
+                        height: 700px;
+                    }
+                }
+                .about{
+                    .aboutMe{
+                        .Small{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            overflow: hidden;
+                            grid-auto-rows: 12rem;
+                            height: 500px;
+
+                            .SmallBx{
+                                height: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+@media(min-width:100px) and (max-width:757.33px){
+    .container{
+            .Sms{
+                .picContainer{
+                    .imgCont{
+                        margin-top: -140px;
+                        object-fit: contain;
+                        height: 800px;
+                    }
+                }
+                .about{
+                    .aboutMe{
+                        .Small{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            overflow: hidden;
+                            grid-auto-rows: 12rem;
+                            height: 500px;
+
+                            .SmallBx{
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+@media(min-width:100px) and (max-width:720px){
+    .container{
+            .Sms{
+                .picContainer{
+                    .imgCont{
+                        margin-top: -140px;
+                        object-fit: contain;
+                        height: 800px;
+                    }
+                }
+                .about{
+                    .aboutMe{
+                        .Small{
+                            margin-top: 40px;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            overflow: hidden;
+                            grid-auto-rows: 10rem;
+                            height: 500px;
+
+                            .SmallBx{
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+@media(min-width:100px) and (max-width:672px){
+    .container{
+          .Sms{
+                display: flex;
+                flex-direction: column;
+                .picContainer{
+                    .imgCont{
+                        display: none;
+                    }
+                }
+                .about{
+                    .aboutMe{
+                        .Small{
+                            margin-top: 40px;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            overflow: hidden;
+                            grid-auto-rows: 10rem;
+                            height: 500px;
+
+                            .SmallBx{
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+@media(min-width:100px) and (max-width:412px){
+    .container{
+      .Sms{
+                display: flex;
+                flex-direction: column;
+                .picContainer{
+                    .imgCont{
+                        display: none;
+                    }
+                }
+                .about{
+                    .aboutMe{
+                        .Small{
+                            margin-top: 40px;
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            overflow: hidden;
+                            grid-auto-rows: 10rem;
+                            height: 500px;
+
+                            .SmallBx{
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}

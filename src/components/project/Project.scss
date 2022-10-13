@@ -1,0 +1,107 @@
+.project{
+    position: relative;
+    padding: 30px;
+    height: auto;
+
+    h3{
+        display: flex;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 30px ;
+    }
+    .projectCon{
+        height: auto;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 20px;
+        gap: 30px;
+
+        .imgCon{
+            width: auto;
+            height: auto;
+            border-radius: 20px;
+            background-color:#1a0e32;
+            color: white;
+
+            img{
+                width: calc(100%);
+                height: 400px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                
+                object-fit: cover;
+            }
+            p{
+             display: flex;
+             width: calc(100%);  
+             padding-bottom: 40px; 
+             padding: 10px;
+             align-content: flex-start;
+             
+            }
+
+            .linkbtn{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 30px;
+                gap: 10px;
+
+                button{
+                   width: 100px;
+                   height: 50px; 
+                   border-radius: 10px;
+                   border-color: #1a0e32;
+
+                   a{
+                    text-decoration: none;
+                    font-size: 18px;
+                    &:hover{
+                        color: white;
+                    }
+                }
+                   &:hover{
+                    background-color:#28154e;
+                    color: white;
+                   }
+                }
+            }
+        }
+    }
+}
+@media(min-width:100px) and (max-width:840px){
+    .project{
+        .projectCon{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media(min-width:100px) and (max-width:728px){
+    .project{
+        margin-top: 100px;
+        .projectCon{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media(min-width:100px) and (max-width:600px){
+    .project{
+        .projectCon{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media(min-width:100px) and (max-width:527.33px){
+    .project{
+        margin-top: 50px;
+    }
+}
+@media(min-width:100px) and (max-width:412px){
+    .project{
+        margin-top: 400px;
+    }
+}

@@ -1,0 +1,105 @@
+.service{
+    margin-top: -10px;
+    overflow: hidden;
+    padding: 20px;
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sevCon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       
+        .boxSev{
+            width: 900px;
+            height:auto ;
+            margin-top: 10px;
+            color:#fff;
+            background-color: #1a0e32;
+            border-radius: 20px;
+
+            h4{
+                display: flex;
+                justify-content: center;
+                padding-top: 20px;
+                font-size: calc(20px);
+            }
+            ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-top: 20px;
+                padding-bottom: 30px;
+                padding-left: 100px;
+                grid-auto-rows: 70px;
+                list-style: none;
+                
+
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    letter-spacing: 0.1rem;
+                   
+                }
+            }
+        }
+    }
+}
+@media(min-width:100px) and (max-width:1029.33px){
+    .service{
+        .sevCon{
+            .boxSev{
+                width: 700px;
+              ul{
+                padding-left: 30px;
+                padding-bottom: 30px;
+              }
+            }
+        }
+    }
+}
+@media(min-width:100px) and (max-width:890px){
+    .service{
+        margin-top: 50px;
+    }
+}
+
+@media(min-width:100px) and (max-width:728.33px){
+    .service{
+    
+        .sevCon{
+            .boxSev{
+                width: 500px;
+              ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-left: 30px;
+                padding-bottom: 30px;
+              }
+            }
+        }
+    }
+}
+@media(min-width:100px) and (max-width:527.33px){
+    .service{ 
+        .sevCon{
+            .boxSev{
+                width: calc(100% - 20px);
+              ul{
+                display: grid;
+                grid-template-columns: 1fr;
+                padding-left: 30px;
+                padding-bottom: 30px;
+              }
+            }
+        }
+    }
+}
+@media(min-width:100px) and (max-width:412.33px){
+    .service{
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,68 @@
+.heroContainer{
+
+    .heroBg{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.3)), url("https://preview.colorlib.com/theme/orbit/images/xhero_img.jpg.pagespeed.ic.WrSXj_3UV4.webp");
+        background-position: 100% 0px;
+        background-size: 100% 140%;
+        fill-opacity: calc(100%);
+        opacity: 1;
+        background-repeat: no-repeat;
+    
+
+        .Sms{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+            width: auto;
+            height: auto;
+            letter-spacing: 0.1rem;
+
+            h3{
+                font-size: 30px;
+                font-weight: 900;
+            }
+            p{
+                font-weight: bolder;
+                font-size: 50px;
+            }
+            .Pc{
+                display: flex;
+                justify-content: space-around; 
+                align-items: center;
+                margin-top: 40px;
+                gap: 5px;   
+                button{
+                    width: 150px;
+                    height: 50px;
+                    background-color: blueviolet;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    border: 1px solid blueviolet;
+               
+                    a{
+                        text-decoration: none;
+                        font-size: 17px;
+                        color: white;
+                        font-weight: 700;
+                        letter-spacing: 0.1rem;
+                        transition: all 0.3s;
+                        &:hover{
+                        font-size: 18px;
+                        }
+                    }
+                }
+                button:nth-child(1){
+                    background-color:rgb(62, 34, 86);
+                    border: 1px solid rgb(62, 34, 86);
+                }
+            }
+        }
+
+        
+    }
+}
