@@ -83,7 +83,7 @@
                     height: 60px;
                     color: black;
                     border-top:1px solid gray;
-                    background-color: blue;
+                    background-color: #1a0e32;
                     animation: animation 0.5s ease forwards;
                     transform: rotateY(90deg) rotateX(90deg);
                     transform-origin: down ;
@@ -116,7 +116,7 @@
 
                         &:hover{
                             color: rgba(240, 248, 255, 0.834);
-                            background-color: rgba(0, 0, 255, 0.449);
+                            background-color: rgba(25, 25, 73, 0.449);
                         }
                     }
                 }

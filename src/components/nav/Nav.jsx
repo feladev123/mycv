@@ -21,9 +21,9 @@ const Nav = () => {
           <ul className={click ? "listed" :"list"}>
             <li><a href="#">Home</a></li>
             <li><a href="#about">About </a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="/">Resume</a></li>
-            <li><a href="/">Contact Me</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Project">Project</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
           </ul>
           <div className="icon" onClick={handleClick}>
             {click ? <MenuIcon/>: <MenuOpenIcon/>}
